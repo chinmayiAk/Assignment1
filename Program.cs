@@ -17,21 +17,19 @@ namespace Assignment1
     {
         static void Main()
         {
-            Program p = new Program();
-
             //1. Self Dividing Numbers
             Console.WriteLine("\n1. Self Dividing Numbers");
             int a = 1, b = 22;
-            p.selfDividingNumbers(a, b);
+            selfDividingNumbers(a, b);
 
             //2. Print Series
             Console.WriteLine("\n2. Print Series");
-            p.series(5);
+            series(5);
 
             //3. Print Inverse Triangle
             Console.WriteLine("\n3. Print inverse Triangle");
             int n1 = 5;
-            p.printTriangle(n1);
+            printTriangle(n1);
 
             //4. Count number of jewels in stones
             Console.WriteLine("\n4. Count number of jewels in stones");
@@ -53,7 +51,7 @@ namespace Assignment1
             Console.ReadLine();
         }
 
-        void selfDividingNumbers(int x, int y)
+        public static void selfDividingNumbers(int x, int y)
         {
             try //try block begins
             {
@@ -83,7 +81,7 @@ namespace Assignment1
             } // catch block ends
         }
 
-        void printTriangle(int n)
+        public static void printTriangle(int n)
         {
             try //try block begins
             {
@@ -105,7 +103,7 @@ namespace Assignment1
             } //catch block ends
         }
 
-        void series(int n)
+        public static void series(int n)
         {
             try //try block begins
             {
@@ -161,7 +159,6 @@ namespace Assignment1
                 int temp; //for swap
 
                 //sort array1 - Selection Sort
-                //Console.WriteLine("Array 1 Sorted");
                 for (int i = 0; i < m.Length; i++)
                 {
                     min_position = i;
@@ -183,8 +180,6 @@ namespace Assignment1
                     //Console.Write(" " + m[i]);
                 }
 
-                //Console.WriteLine("\n Array 2 sorted ");
-
                 //sort array2 - Selection Sort
                 for (int i = 0; i < n.Length; i++)
                 {
@@ -204,11 +199,9 @@ namespace Assignment1
                         n[i] = n[min_position];
                         n[min_position] = temp;
                     }
-                    //Console.Write(" " + n[i]);
                 }
 
                 int lim;
-                //Console.WriteLine("\n***");
                 //checking lengths of the arrays
                 if (m.Length < n.Length)
                     lim = m.Length;
@@ -239,13 +232,6 @@ namespace Assignment1
             } //catch block ends
 
         }
-
-        public static void displayArray(int[] a)
-        {
-
-        }
-
-
 
         public static void solvePuzzle()
         {
