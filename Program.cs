@@ -5,9 +5,6 @@
  *          use of methods, arrays and loops.
  */
 
-
-
-
 using System;   
 using System.Linq;
 
@@ -269,3 +266,13 @@ namespace Assignment1
     }
 }
 
+/*
+ * SELF-REFLECTION:
+ * 1. Work on writing code faster - to come up with logic and testing it by writing code multiple times
+ * 2. Increased my patience with myself - I cannot come up with the right answers in the first go and I 
+ * need to heed that
+ * 3. Best thing was not having ready soultions online. This made me think in all different ways to come
+ * up with solutions
+ * 
+ * Although I did not get all of it, I have learnt a lot from this Assignment. Kudos on that! 
+ */
